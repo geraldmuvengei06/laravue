@@ -1,0 +1,90 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+// @import 'variables';
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+// Custom colors
+
+$flush : #6a3093;
+$flush-light : #a044ff;
+
+$blush : #B24592;
+$blush-light: #F15F79;
+$blush-translucent: rgba(178, 69, 146, 0.3);
+
+$red : rgba(255,74,110,.2);
+
+$teal: rgba(35,209,153,.2);
+
+$yellow: rgba(255,221,87,.2);
+
+$gray: rgba(0,0,0,.1);
+
+// Bulma
+
+// @import '~bulma-scss/bulma.scss'
+
+
+// Hero Background
+
+.has-background-gradient-flush{
+    
+    background: $flush !important;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a044ff, $flush) !important;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a044ff, $flush) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.has-background-gradient-blush{
+    background: $blush;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F15F79, $blush);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F15F79, $blush); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.is-blush {
+    color: $blush;
+}
+
+.has-background-blush {
+    background: $blush;
+    color: #ffffff;
+}
+
+.is-flush {
+    color: $flush;
+}
+
+.has-background-flush {
+    background: $flush;
+    color: #ffffff;
+}
+
+// text shadow
+
+.has-shadow-red {
+    box-shadow: inset 0 -6px 0 $red
+}
+
+.has-shadow-teal {
+    box-shadow: inset 0 -6px 0 $teal
+}
+
+.has-shadow-yellow {
+    box-shadow: inset 0 -6px 0 $yellow
+}
+
+.has-shadow-blush {
+    box-shadow: inset 0 -6px 0 $blush-translucent;
+}
+
+
+// box shadow
+.has-box-shadow-gray{
+    box-shadow: 0 2px 5px 0 $gray;
+}
